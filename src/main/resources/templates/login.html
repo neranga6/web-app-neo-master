@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/login.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Favicons -->
+    <link href="/images/favicon.png" rel="icon">
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <title>Automatic Popup</title>
+<div class="popup">
+    <button id="close">&times;</button>
+         <form th:action="@{/resume-page}" method="post">
+            <input type="hidden" id="username" name="username"  value="admin" />
+            <div class="form-field">
+                <input type="password"  id="password"    placeholder="Please Enter Password"  name="password"/>
+             </div>
+            <div class="form-field">
+
+                <button class="btn" type="submit">Log in</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="/js/popup.js"></script>
+</body>
+</html>

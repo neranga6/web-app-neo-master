@@ -1,0 +1,32 @@
+#output {
+    text-align: left;
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin: 10px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.system-text {
+    color: #d3ce1e;
+}
+
+.out-text {
+    color: #e06c75;
+}
+
+.println-text {
+    color: #61afef;
+}
+
+.left-align {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    /* Add responsive styles for smaller screens here */
+    #output {
+        font-size: 0.8rem; /* Adjust the font size for mobile devices */
+    }
+}
